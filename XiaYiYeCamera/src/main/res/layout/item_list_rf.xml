@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="7dp" >
+   
+    <RelativeLayout 
+        android:id="@+id/rl_item_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:padding="1.5dp"
+         android:background="@drawable/shape_circular_black"
+        >
+    <ImageView
+        android:id="@+id/item_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="1dp"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/rl_item_iv"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/color_666666"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_tv_code"
+            android:layout_width="wrap_content"
+             android:textColor="@color/color_666666"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_name"
+            android:layout_below="@+id/item_name"
+            android:layout_marginTop="3dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>

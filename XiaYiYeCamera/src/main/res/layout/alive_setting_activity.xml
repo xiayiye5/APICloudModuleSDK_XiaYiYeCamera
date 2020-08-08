@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal"
+        android:padding="15dip">
+
+        <ImageView
+            android:id="@+id/snapshot_alive_setting"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/alive_snapshot_bg"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/videoclip" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/nickname_alive_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="摄像机"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/uid_alive_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nickname_alive_setting"
+                android:layout_marginTop="5dp"
+                android:text="AAAA-101941-DCGSF"
+                android:textColor="@color/font_normal" />
+
+            <ImageView
+                android:id="@+id/iv_rf"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/rf"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/red_spot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shap_red_spot"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/ll_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_rf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/alive_setting_top_item_bg"
+                android:clickable="true"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingLeft="30dip"
+                android:paddingRight="@dimen/px_10"
+                android:paddingTop="@dimen/px_10"
+                android:text="@string/rf_sensor"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/modify_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/alive_setting_top_item_bg"
+                android:clickable="true"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingLeft="30dip"
+                android:paddingRight="@dimen/px_10"
+                android:paddingTop="@dimen/px_10"
+                android:text="@string/item_modify_password"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+            <!--
+                 <TextView
+                android:id="@+id/alarm_motion_detection"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/item_alarm_motion_detection" />
+            -->
+
+            <LinearLayout
+                android:id="@+id/alarm_motion_detection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/alive_setting_item_bg"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/item_alarm_motion_detection"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/action_human_alarm"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/humanoid_alarm" />
+            <TextView
+                android:id="@+id/action_with_alarm"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/item_action_with_alarm" />
+
+            <TextView
+                android:id="@+id/timing_video"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/item_timing_video" />
+
+            <TextView
+                android:id="@+id/audio_setup"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/item_audio_setup" />
+
+            <TextView
+                android:id="@+id/video_settings"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/item_video_settings" />
+
+            <TextView
+                android:id="@+id/wifi_settings"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/item_wifi_settings" />
+
+            <TextView
+                android:id="@+id/sd_card_set"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/item_sd_card_set" />
+
+            <TextView
+                android:id="@+id/equipment_time_setting"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/item_equipment_time_setting" />
+
+            <TextView
+                android:id="@+id/mailbox_settings"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/item_mailbox_settings" />
+
+            <TextView
+                android:id="@+id/ftp_settings"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/item_ftp_settings" />
+
+            <TextView
+                android:id="@+id/system_settings"
+                style="@style/alive_setting_textview_style"
+                android:text="@string/item_system_settings" />
+
+            <TextView
+                android:id="@+id/equipment_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/alive_setting_bottom_item_bg"
+                android:clickable="true"
+                android:drawableRight="@drawable/arrow"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingLeft="30dip"
+                android:paddingRight="@dimen/px_10"
+                android:paddingTop="@dimen/px_10"
+                android:text="@string/item_equipment_information"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

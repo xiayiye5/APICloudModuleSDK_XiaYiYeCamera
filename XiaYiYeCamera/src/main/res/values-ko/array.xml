@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="tab_name">
+		<item>카메라</item>
+		<item>스냅샷</item>
+		<item>비디오</item>
+		<item>정보</item>
+	</string-array>
+	<string-array name="connect_state">
+		<item>연결이 끊어짐</item>
+		<item>연결 중</item>
+		<item>연결 중</item>
+		<item>잘못된 비밀번호</item>
+		<item>온라인</item>
+	</string-array>
+	<string-array name="motion_detection_sensitivity">
+		<item>높음</item>
+		<item>보통</item>
+		<item>낮음</item>
+	</string-array>
+	<string-array name="audio_input_style">
+		<item>라인 입력</item>
+		<item>마이크 입력</item>
+	</string-array>
+	
+	<string-array name="device_timezone_old">
+        <item>GMT-11 협정세계시-11;</item>
+        <item>GMT-10 하와이;</item>
+        <item>GMT-9 알래스카;</item>
+        <item>GMT-8 태평양 표준시(미국과 캐나다);</item>
+        <item>GMT-7 산지 표준시(미국과 캐나다);</item>
+        <item>GMT-6 중부 표준시(미국과 캐나다);</item>
+        <item>GMT-5 동부 표준시(미국과 캐나다);보고타;리마;</item>
+        <item>GMT-4 대서양 표준시(캐나다);산티아고;라파스;</item>
+        <item>GMT-3 브라질리아;부에노스아이레스</item>
+        <item>GMT-2 협정 세계시-02;</item>
+        <item>GMT-1 아조레스;카보베르데제도;</item>
+        <item>GMT 0 협정 세계시：런던;리스본;카사블랑카;</item>
+        <item>GMT+1 파리;베를린;로마;마드리드;</item>
+        <item>GMT+2 아테네;예루살렘;카이로;헬싱키;</item>
+        <item>GMT+3 모스크바;나이로비;리야드</item>
+        <item>GMT+4 바쿠;트빌리시;아부다비;무스카트;</item>
+        <item>GMT+5 뉴델리;이슬라마바드;카라치;</item>
+        <item>GMT+6 다카;노보시비르스크;아스타나;</item>
+        <item>GMT+7 방콕;하노이;자카르타;</item>
+        <item>GMT+8 베이징;싱가포르;홍콩;타이페이;</item>
+        <item>GMT+9 서울;아큐츠크;도쿄;</item>
+        <item>GMT+10 괌;마가단;시드니;</item>
+        <item>GMT+11 솔로몬제도;뉴칼레도니아;초쿠르다흐;</item>
+        <item>GMT+12 웰링턴;피지;오클랜드;</item>
+    </string-array>
+	
+	<string-array name="device_timezone_new">
+		<item>Etc/GMT-12</item>
+		<item>Pacific/Apia</item>
+		<item>Pacific/Honolulu</item>
+		<item>America/Anchorage</item>
+		<item>America/Los_Angeles</item>
+		<item>America/Denver</item>
+		<item>America/Tegucigalpa</item>
+		<item>America/Phoenix</item>
+		<item>America/Saskatchewan</item>
+		<item>America/Mexico_City</item>
+		<item>America/Chicago</item>
+		<item>America/Costa_Rica</item>
+		<item>America/Indianapolis</item>
+		<item>America/New_York</item>
+		<item>America/Bogota</item>
+		<item>America/Caracas</item>
+		<item>America/Santiago</item>
+		<item>America/Montreal</item>
+		<item>America/St_Johns</item>
+		<item>America/Thule</item>
+		<item>America/Buenos_Aires</item>
+		<item>America/Sao_Paulo</item>
+		<item>Atlantic/South_Georgia</item>
+		<item>Atlantic/Cape_Verde</item>
+		<item>Atlantic/Azores</item>
+		<item>Europe/Dublin</item>
+		<item>Africa/Casablanca</item>
+		<item>Europe/Amsterdam</item>
+		<item>Europe/Belgrade</item>
+		<item>Europe/Brussels</item>
+		<item>Europe/Warsaw</item>
+		<item>Africa/Lagos</item>
+		<item>Europe/Athens</item>
+		<item>Europe/Bucharest</item>
+		<item>Africa/Cairo</item>
+		<item>Africa/Harare</item>
+		<item>Europe/Helsinki</item>
+		<item>Asia/Jerusalem</item>
+		<item>Asia/Baghdad</item>
+		<item>Asia/Kuwait</item>
+		<item>Europe/Moscow</item>
+		<item>Africa/Nairobi</item>
+		<item>Asia/Tehran</item>
+		<item>Asia/Dubai</item>
+		<item>Asia/Baku</item>
+		<item>Asia/Kabul</item>
+		<item>Asia/Yekaterinburg</item>
+		<item>Asia/Karachi</item>
+		<item>Asia/Calcutta</item>
+		<item>Asia/Katmandu</item>
+		<item>Asia/Novosibirsk</item>
+		<item>Asia/Dhaka</item>
+		<item>Asia/Astana</item>
+		<item>Asia/Rangoon</item>
+		<item>Asia/Bangkok</item>
+		<item>Asia/Krasnoyarsk</item>
+		<item>Asia/Hong_Kong</item>
+		<item>Asia/Irkutsk</item>
+		<item>Asia/Kuala_Lumpur</item>
+		<item>Australia/Perth</item>
+		<item>Asia/Taipei</item>
+		<item>Asia/Tokyo</item>
+		<item>Asia/Seoul</item>
+		<item>Asia/Yakutsk</item>
+		<item>Australia/Adelaide</item>
+		<item>Australia/Brisbane</item>
+		<item>Australia/Sydney</item>
+		<item>Pacific/Guam</item>
+		<item>Australia/Hobart</item>
+		<item>Asia/Vladivostok</item>
+		<item>Asia/Magadan</item>
+		<item>Pacific/Auckland</item>
+		<item>Pacific/Fiji</item>
+		<item>Pacific/Tongatapu</item>
+	</string-array>
+	<string-array name="net_work_style">
+		<item>CABLE</item>
+		<item>WIFI</item>
+	</string-array>
+	<string-array name="video_frequency">
+		<item>50HZ</item>
+		<item>60HZ</item>
+	</string-array>
+	<string-array name="video_apenc">
+		<item>INVALID</item>
+		<item>NONE</item>
+		<item>WEP</item>
+		<item>WPA_TKIP</item>
+		<item>WPA_AES</item>
+		<item>WPA2_TKIP</item>
+		<item>WPA2_AES</item>
+	</string-array>
+	<string-array name="recording_time">
+		<item>없음</item>
+		<item>종일</item>
+	</string-array>
+	<string-array name="safety_connection">
+		<item>None</item>
+		<item>SSL</item>
+		<item>TLS</item>
+		<item>STARTTLS</item>
+	</string-array>
+	<string-array name="online_recording_type">
+		<item>모든 녹화</item>
+		<item>수동 녹화</item>
+		<item>이벤트 녹화</item>
+		<item>시간 녹화</item>
+	</string-array>
+	<string-array name="event_type">
+		<item>모든 녹화</item>
+		<item>수동 녹화</item>
+		<item>이벤트 녹화</item>
+		<item>시간 녹화</item>
+
+	</string-array>
+	<string-array name="alarm_action_picture_num">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="tips_alarm_list_array">
+		<item>모션 알람</item>
+		<item>IO 알람</item>
+		<item>오디오 알람</item>
+		<item>UART 알람</item>
+		<item> 인간형 인식 경고 </item>
+	</string-array>
+
+</resources>

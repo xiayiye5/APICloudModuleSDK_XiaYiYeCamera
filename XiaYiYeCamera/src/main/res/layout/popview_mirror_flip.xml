@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_pupview_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <!-- android:background="@color/radio_bg_normal" -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/txt_live_mirror"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <com.hichip.hichip.widget.SwitchButton
+            android:id="@+id/toggle_mirror"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+         />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/txt_live_flip"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <com.hichip.hichip.widget.SwitchButton
+            android:id="@+id/toggle_flip"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+          />
+    </LinearLayout>
+
+</LinearLayout>

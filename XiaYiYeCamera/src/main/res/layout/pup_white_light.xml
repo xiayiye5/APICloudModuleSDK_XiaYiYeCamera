@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_install_mode_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_infrared_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/live_view_light_normal"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_infra"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#aaaaaa" />
+
+        <LinearLayout
+            android:id="@+id/ll_full_color_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/live_view_light_color"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_full_color"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#aaaaaa" />
+
+        <LinearLayout
+            android:id="@+id/ll_intelligence_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/live_view_light_auto"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_intell"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

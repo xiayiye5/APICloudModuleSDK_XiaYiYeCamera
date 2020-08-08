@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playback_local"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent" >
+
+    <com.hichip.thecamhi.base.MyPlaybackGLMonitor
+        android:id="@+id/monitor_playback_local"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_playlocal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_gradient_live_buttom"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_pause_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:clickable="false"
+            android:padding="3dp"
+            android:src="@drawable/playback_play_btn_bg"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/iv_fastforward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:padding="2dp"
+            android:src="@drawable/fast_forward" />
+
+        <TextView
+            android:id="@+id/tv_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:gravity="center_vertical"
+            android:textColor="#eeeeee"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/sb_playing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_start_time"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@drawable/shape_seekbar_thumb" />
+
+        <TextView
+            android:id="@+id/tv_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/prs_playing"
+            android:text="00:00"
+            android:textColor="#eeeeee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/prs_playing"
+            android:text="/"
+            android:textColor="#eeeeee" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/play_btn_playback_online"
+            android:text="00:00"
+            android:textColor="#eeeeee" />
+
+        <ImageView
+            android:id="@+id/pb_local_exit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="8dp"
+            android:padding="2dp"
+            android:src="@drawable/power_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cureent_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/click_btn_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_current_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/tips_play_progress"
+            android:textColor="#666666"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_precent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_play_local_pro"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/click_btn_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_play_loca_current_pro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_play_loca_druation_tim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

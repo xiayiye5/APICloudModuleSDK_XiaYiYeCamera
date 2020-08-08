@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tab_name">
+        <item>攝像機</item>
+        <item>照片</item>
+        <item>錄影</item>
+        <item>關於</item>
+    </string-array>
+    <string-array name="connect_state">
+        <item>未連接</item>
+        <item>連接中&#8230;</item>
+        <item>連接中&#8230;</item>
+        <item>密碼錯誤</item>
+        <item>在線</item>
+    </string-array>
+    <string-array name="motion_detection_sensitivity">
+        <item>高</item>
+        <item>中</item>
+        <item>低</item>
+    </string-array>
+    <string-array name="audio_input_style">
+        <item>線性輸入</item>
+        <item>麥克風輸入</item>
+    </string-array>
+    <string-array name="device_timezone_old">
+        <item>GMT-11 中途島;薩摩亞群島;</item>
+        <item>GMT-10 夏威夷;</item>
+        <item>GMT-9 阿拉斯加;</item>
+        <item>GMT-8 太平洋時間(美國和加拿大);</item>
+        <item>GMT-7 山地時間(美國和加拿大);</item>
+        <item>GMT-6 中部時間(美國和加拿大);</item>
+        <item>GMT-5 東部時間(美國和加拿大);波哥大;利馬;</item>
+        <item>GMT-4 大西洋時間(加拿大);聖地亞哥;拉巴斯;</item>
+        <item>GMT-3 巴西利亞;布宜諾斯艾利斯</item>
+        <item>GMT-2 中大西洋;</item>
+        <item>GMT-1 亞速爾群島;佛得角群島;</item>
+        <item>GMT 0 格林威治標準時間：倫敦;裏斯本;卡薩布蘭卡;</item>
+        <item>GMT+1 巴黎;柏林;羅馬;馬德裏;</item>
+        <item>GMT+2 雅典;耶路撒冷;開羅;赫爾辛基;</item>
+        <item>GMT+3 莫斯科;內羅比;利雅得</item>
+        <item>GMT+4 巴庫;第比利斯;阿布紮比;馬斯喀特;</item>
+        <item>GMT+5 新德裏;伊斯蘭堡;卡拉奇;</item>
+        <item>GMT+6 達喀爾;阿拉木圖;新西伯利亞;阿斯塔納;</item>
+        <item>GMT+7 曼谷;河內;雅加達;</item>
+        <item>GMT+8 北京;新加坡;香港;臺北;</item>
+        <item>GMT+9 首爾;雅庫茨克;東京;</item>
+        <item>GMT+10 關島;墨爾本;悉尼;</item>
+        <item>GMT+11 所羅門群島;新喀裏多尼亞;馬加丹</item>
+        <item>GMT+12 惠靈頓;斐濟;奧克蘭</item>
+    </string-array>
+    <string-array name="device_timezone_new">
+        <item>國際日期變更線西12區</item>
+        <item>中途島，薩摩亞群島</item>
+        <item>夏威夷</item>
+        <item>阿拉斯加</item>
+        <item>太平洋時間（美國和加拿大）</item>
+        <item>奇瓦瓦，拉巴斯，馬薩特蘭</item>
+        <item>山地時間（美國和加拿大）</item>
+        <item>亞利桑那</item>
+        <item>薩斯喀徹溫</item>
+        <item>瓜達拉哈拉，墨西哥城，蒙特雷</item>
+        <item>中部時間 (美國和加拿大)</item>
+        <item>哥斯達黎加</item>
+        <item>印第安納州</item>
+        <item>東部時間 (美國和加拿大)</item>
+        <item>波哥大，利馬，基多</item>
+        <item>加拉加斯</item>
+        <item>聖地亞哥</item>
+        <item>大西洋時間 (加拿大)</item>
+        <item>紐芬蘭</item>
+        <item>蒙得維的亞</item>
+        <item>布宜諾斯艾利斯</item>
+        <item>聖保羅</item>
+        <item>中大西洋</item>
+        <item>佛得角群島</item>
+        <item>亞速爾群島</item>
+        <item>格林威治標準時間：都柏林，倫敦，裏斯本</item>
+        <item>卡薩布蘭卡</item>
+        <item>阿姆斯特丹，巴黎，柏林，羅馬，馬德裏，斯多哥爾摩</item>
+        <item>貝爾格萊德，布拉迪斯拉發，布達佩斯，盧布爾雅那</item>
+        <item>布魯塞爾，哥本哈根，馬德裏，巴黎</item>
+        <item>薩拉熱窩，斯科普裏，華沙，薩格勒布</item>
+        <item>中非西部</item>
+        <item>安曼</item>
+        <item>雅典，布加勒斯特，伊斯坦布爾</item>
+        <item>開羅</item>
+        <item>哈拉雷，比勒陀利亞</item>
+        <item>赫爾辛基，基輔，裏加，索菲亞，塔林，維爾紐斯</item>
+        <item>耶路撒冷</item>
+        <item>巴格達</item>
+        <item>科威特，利雅得</item>
+        <item>莫斯科</item>
+        <item>內羅畢</item>
+        <item>德黑蘭</item>
+        <item>阿布紮比，馬斯喀特</item>
+        <item>巴庫</item>
+        <item>喀布爾</item>
+        <item>葉卡捷琳堡</item>
+        <item>伊斯蘭堡，卡拉奇</item>
+        <item>加爾各答，孟買，馬德拉斯，新德裏</item>
+        <item>加德滿都</item>
+        <item>新西伯利亞</item>
+        <item>達卡</item>
+        <item>阿斯塔納</item>
+        <item>仰光</item>
+        <item>曼谷，河內，雅加達</item>
+        <item>克拉斯諾亞爾斯克</item>
+        <item>北京，重慶，香港特別行政區，烏魯木齊</item>
+        <item>伊爾庫茲克</item>
+        <item>吉隆坡，新加坡</item>
+        <item>珀斯</item>
+        <item>臺北</item>
+        <item>大阪，劄幌，東京</item>
+        <item>首爾</item>
+        <item>雅庫茲克</item>
+        <item>阿德萊德</item>
+        <item>布裏斯班</item>
+        <item>堪培拉，墨爾本，悉尼</item>
+        <item>關島，莫爾茲比港</item>
+        <item>霍巴特</item>
+        <item>符拉迪沃斯托克</item>
+        <item>馬加達</item>
+        <item>奧克蘭，惠靈頓</item>
+        <item>斐濟</item>
+        <item>努庫阿洛法</item>
+    </string-array>
+    <string-array name="net_work_style">
+        <item>有線</item>
+        <item>無線</item>
+    </string-array>
+    <string-array name="video_frequency">
+        <item>50赫茲</item>
+        <item>60赫茲</item>
+    </string-array>
+    <string-array name="video_apenc">
+        <item>INVALID</item>
+        <item>NONE</item>
+        <item>WEP</item>
+        <item>WPA_TKIP</item>
+        <item>WPA_AES</item>
+        <item>WPA2_TKIP</item>
+        <item>WPA2_AES</item>
+    </string-array>
+    <string-array name="safety_connection">
+        <item>None</item>
+        <item>SSL</item>
+        <item>TLS</item>
+        <item>STARTTLS</item>
+    </string-array>
+    <string-array name="recording_time">
+        <item>無</item>
+        <item>全天</item>
+    </string-array>
+    <string-array name="online_recording_type">
+        <item>所有錄像</item>
+        <item>手動錄像</item>
+        <item>報警錄像</item>
+        <item>計劃錄像</item>
+    </string-array>
+    <string-array name="event_type">
+        <item>所有錄像</item>
+        <item>手動錄像</item>
+        <item>報警錄像</item>
+        <item>計劃錄像</item>
+    </string-array>
+    <string-array name="alarm_action_picture_num">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="tips_alarm_list_array">
+        <item>移動偵測</item>
+        <item>外置報警</item>
+        <item>聲音報警</item>
+        <item>串口報警</item>
+        <item>人形識別警告</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.hichip.thecamhi.base.TitleView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/alarm_select_voice" />
+
+    <RelativeLayout
+        android:id="@+id/rl_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/alarm_alarm_sound"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_alarm"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/finish"
+            android:tint="#5CACEE"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_barking"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/alarm_barking"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_barking"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/finish"
+            android:tint="#5CACEE"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_custom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/alarm_custom"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_custom"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/finish"
+            android:tint="#5CACEE"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_record_about"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp" >
+
+        <com.hichip.customview.MyRecordView
+            android:id="@+id/play"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/record"
+            android:visibility="gone"
+            app:playCenterText="@string/stop_play_record"
+            app:centerText="@string/play_aduio"
+            app:isPlayRecording="true" />
+
+        <com.hichip.customview.MyRecordView
+            android:id="@+id/record"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            app:playCenterText=""
+            app:centerText="@string/record_aduio"
+            app:isPlayRecording="false" />
+    </RelativeLayout>
+
+</LinearLayout>

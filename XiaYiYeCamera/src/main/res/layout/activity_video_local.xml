@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/video_local_title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/rg_loaandonli"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:singleLine="true"
+            android:id="@+id/radio_local"
+            android:layout_width="85dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/radio_btn_picture_fragment_left_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/tit_video"
+            android:textColor="@drawable/radio_button_font_style"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:singleLine="true"
+            android:id="@+id/radio_online"
+            android:layout_width="85dp"
+            android:layout_height="34dp"
+            android:background="@drawable/radio_btn_picture_fragment_right_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/btn_download_local_video"
+            android:textColor="@drawable/radio_button_font_style"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <com.hichip.thecamhi.widget.swipe.SwipeMenuListView
+        android:id="@+id/list_video_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/layout_camera_fragment_main_bg"
+        android:divider="@color/radio_bg_normal"
+        android:dividerHeight="1dip" >
+    </com.hichip.thecamhi.widget.swipe.SwipeMenuListView>
+
+</LinearLayout>

@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_color" >
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="52dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/selector_btn_title_back" />
+
+        <TextView
+            android:id="@+id/tv_install_mode_"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#00a8ff"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl__fish_live"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top" >
+
+        <com.hichip.thecamhi.base.MyLiveViewGLMonitor
+            android:id="@+id/monitor_live_view"
+            android:layout_width="match_parent"
+            android:layout_height="360dp" />
+
+        <ImageView
+            android:id="@+id/iv_loading2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:src="@drawable/loading2"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_timezone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#44444444"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/iv_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/shape_circle"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txt_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/iv_recording"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_recording"
+            android:gravity="center"
+            android:text="@string/txt_recording"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/ll_land_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_gradient_live"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/btn_live_land_return"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:padding="4dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/tv_tit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/play_view_model"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:layout_toLeftOf="@+id/iv_more"
+                android:background="@drawable/shape_know_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:text="@string/xml_switch_view"
+                android:textColor="#eeeeee"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_white_light"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/iv_full_screen"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:clickable="true"
+            android:padding="2dp"
+            android:src="@drawable/selector_white_light" />
+
+        <ImageView
+            android:id="@+id/iv_full_screen"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@+id/monitor_live_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_full_screen"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/full_screen"
+            android:tint="#ffffff"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_land_white_light"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@+id/monitor_live_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="12dp"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_white_light"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:src="@drawable/loading2"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_live_view_model"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#aa666666"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_install_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" >
+
+                    <TextView
+                        android:id="@+id/tv_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/xml_current_install_mode"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_install"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/tv_tip"
+                        android:text="@string/fish_top"
+                        android:textColor="#ffffff"
+                        android:textSize="28sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_tint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/rl_install_model"
+                    android:layout_below="@+id/rl_install_model"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/xml_select_view_model"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_view_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tint"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbtn_circle"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/selector_pup_circluer"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center_vertical" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_cylinder"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="35dp"
+                        android:background="@drawable/selector_pup_roundboby"
+                        android:button="@null"
+                        android:gravity="center_vertical" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_bowl"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@drawable/selector_pup_bowl"
+                        android:button="@null"
+                        android:gravity="center_vertical" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_two"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@drawable/selector_pup_two"
+                        android:button="@null"
+                        android:gravity="center_vertical" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_four"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@drawable/selector_pup_four"
+                        android:button="@null"
+                        android:gravity="center_vertical" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_wall_partview"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="45dp"
+                        android:background="@drawable/selector_pup_wall"
+                        android:button="@null"
+                        android:gravity="center_vertical"
+                        android:visibility="gone" />
+                </RadioGroup>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl__fish_live"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/fish_view_model"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_view_model"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <RadioGroup
+                android:id="@+id/rg_live_fisheye_view_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/rbtn_live_circle"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_pup_circluer" />
+
+                <ImageView
+                    android:id="@+id/rbtn_live_cylinder"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_pup_roundboby" />
+
+                <ImageView
+                    android:id="@+id/rbtn_live_bowl"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_pup_bowl" />
+
+                <ImageView
+                    android:id="@+id/rbtn_live_two"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_pup_two" />
+
+                <ImageView
+                    android:id="@+id/rbtn_live_four"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_pup_four" />
+
+                <ImageView
+                    android:id="@+id/rbtn_live_wall_partview"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_pup_wall"
+                    android:visibility="gone" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:background="#eeeeee"
+            android:gravity="fill_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="8dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_voice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_voice"
+                    android:layout_width="@dimen/live_iv_width"
+                    android:layout_height="@dimen/live_iv_hei"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_fish_iv_bg"
+                    android:padding="8dp"
+                    android:src="@drawable/selector_voice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/iv_voice"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/fish_listen"
+                    android:textColor="@color/color_live_txt"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_talk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_talk"
+                    android:layout_width="@dimen/live_iv_width"
+                    android:layout_height="@dimen/live_iv_hei"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_fish_iv_bg"
+                    android:padding="8dp"
+                    android:src="@drawable/selector_talk" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/iv_talk"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/fish_talk"
+                    android:textColor="@color/color_live_txt"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_snapshot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_snapshot"
+                    android:layout_width="@dimen/live_iv_width"
+                    android:layout_height="@dimen/live_iv_hei"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_fish_iv_bg"
+                    android:padding="8dp"
+                    android:src="@drawable/selector_snapshot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/iv_snapshot"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/fish_snap"
+                    android:textColor="@color/color_live_txt"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_record_video"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_record_video"
+                    android:layout_width="@dimen/live_iv_width"
+                    android:layout_height="@dimen/live_iv_hei"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_fish_iv_bg"
+                    android:padding="8dp"
+                    android:src="@drawable/selector_record" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/iv_record_video"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/tit_video"
+                    android:textColor="@color/color_live_txt"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cruise"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_live_cruise"
+                    android:layout_width="@dimen/live_iv_width"
+                    android:layout_height="@dimen/live_iv_hei"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_fish_iv_bg"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:padding="8dp"
+                    android:src="@drawable/selector_live_cruis" />
+
+                <TextView
+                    android:id="@+id/tv_live_cruise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/iv_live_cruise"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:text="@string/fish_cruise"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bb666666"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <com.hichip.customview.CircularView
+            android:id="@+id/circular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.hichip.customview.CircularView>
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circular"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="3dp"
+            android:paddingRight="5dp"        
+            android:text="@string/fish_divide_nine"
+            android:textColor="#008000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/fish_dou_elg"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/shape_know_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="@string/fish_know"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

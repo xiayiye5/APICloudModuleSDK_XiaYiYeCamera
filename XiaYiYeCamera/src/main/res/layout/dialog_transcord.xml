@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30000000" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:padding="3dp"
+        android:background="@drawable/shape_dialog_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:text="@string/video_convert"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="65dp"
+            android:padding="5dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/tips_about_video_vonert"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:clickable="true"
+                android:textColor="@drawable/selector_bg_press"
+                android:textSize="14sp" />
+            <ImageView 
+                android:layout_width="1dp"
+                android:background="#eee"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="OK"
+                android:textColor="@drawable/selector_bg_press"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

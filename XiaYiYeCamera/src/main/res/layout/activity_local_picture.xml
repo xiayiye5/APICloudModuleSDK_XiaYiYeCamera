@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title_top_lp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.hichip.widget.stickygridheaders.StickyGridHeadersGridView
+        android:id="@+id/asset_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:clipToPadding="false"
+        android:columnWidth="90dip"
+        android:paddingBottom="50dp"
+        android:horizontalSpacing="3dip"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="3dip"
+/>
+
+    <LinearLayout
+        android:id="@+id/ll_anim"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F40B45"
+        android:gravity="center" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#00ffffff"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/delete"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

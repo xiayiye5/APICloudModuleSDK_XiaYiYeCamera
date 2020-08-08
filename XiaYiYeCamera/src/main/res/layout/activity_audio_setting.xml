@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/nor_background_ll"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_input_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/input_style"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_audio_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="25dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_linear"
+                    android:layout_width="78dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="1dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:background="@drawable/radio_btn_picture_fragment_left_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@drawable/radio_button_font_style"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_microphone"
+                    android:layout_width="78dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/radio_btn_picture_fragment_right_bg"
+                    android:button="@null"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textColor="@drawable/radio_button_font_style"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp" 
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_volume"
+                android:textColor="@color/black" />
+
+            <SeekBar
+                android:id="@+id/seekbar_audio_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txt_audio_input_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/output_volume"
+                android:textColor="@color/black" />
+
+            <SeekBar
+                android:id="@+id/seekbar_audio_output"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txt_audio_output_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

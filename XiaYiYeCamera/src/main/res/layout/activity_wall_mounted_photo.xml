@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <com.hichip.thecamhi.base.MyLiveViewGLMonitor
+        android:id="@+id/monitor_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true" />
+
+    <RelativeLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gradient_live"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/btn_return"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:padding="4dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/btn_return"
+            android:textColor="#ffffff" />
+        <ImageView 
+            android:id="@+id/iv_more"
+            android:background="@drawable/shape_know_bg"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+             android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:clickable="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/more"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

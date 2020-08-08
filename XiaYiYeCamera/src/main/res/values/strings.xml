@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">CamHi</string>
+
+    <!-- 人形报警相关 20190819  5.1.76 donint -->
+    <string name="humanoid_alarm">humanoid alarm</string>
+    <string name="smart_umanoid_ecognition">Smart Humanoid Recognition</string>
+    <string name="alarm_trigger">Alarm Trigger</string>
+    <string name="alone_trigger">alone trigger</string>
+    <string name="linkage_trigger">linkage trigger</string>
+    <string name="open_the_motion_detection">Please open the motion detection alarm</string>
+    <string name="human_mode_content">The linkage trigger function must be enabled for both motion detection and humanoid recognition to be effective</string>
+    <string name="human_trigger_mode">human trigger mode</string>
+    <string name="frame_human_form">frame human form</string>
+
+    <!-- 添加协议 20190730  5.1.73  donint -->
+    <string name="about_and">and</string>
+    <string name="about_user_agreement">《Service Agreement》</string>
+    <string name="about_user_privacy">《Privacy Policy》</string>
+    <string name="scan_tip">Automatically scan the QR code or barcode into the box</string>
+
+    <!-- 君正分辨率修改后 设备重启  20190626  5.1.71  donint-->
+    <string name="sysreboot_change_resolution">After modifying the resolution, the device will restart automatically!</string>
+
+    <!-- 后台运行 20190528  5.1.68  donint -->
+    <string name="keep_background">Keep running in the background</string>
+
+    <!-- 分辨率获取设置 20190517  5.1.66  donint -->
+    <string name="video_resolution">Resolution</string>
+
+    <!-- 声光报警 20190328  5.1.64  donint -->
+    <string name="audible_alarm_open">Open Acousto-optic Alarm</string>
+    <string name="audible_alarm_close">Close Acousto-optic Alarm</string>
+    <string name="audible_alarm_auto">Intelligent Acousto-optic Alarm</string>
+
+    <!--181226  5.1.59 -->
+    <string name="closed_plan_record">Scheduled video has been closed</string>
+    <string name="closed_alarm_record">Alarm recording has been turned off</string>
+
+    <!--20180917  5.1.52-->
+    <string name="tips_open_notification">Please open the notification in the settings</string>
+    <string name="change_format_hint">After modifying the video system, the device will restart automatically!</string>
+    <string name="notification_channel_name">Equipment alarm</string>
+
+    <!--20180907  5.1.48-->
+    <string name="no_sd_card">The device is not inserted into the SD card.</string>
+    <string name="bit_rate_setting">Stream setting</string>
+    <string name="change_bit_hint">After modifying the code stream, the system will automatically restart!</string>
+    <!--20180815 5.1.39-->
+    <string name="alarm_custom">Custom recording</string>
+    <string name="failed_record_audio">Record failed, please try again</string>
+    <string name="mini_time_record_audio">Recording time is as short as two seconds</string>
+    <string name="play_audio_fail">Playback failed</string>
+    <string name="give_up_record">Are you sure to give up the current recording?</string>
+
+    <string name="cover_audio">Are you sure to overwrite the current recording file?</string>
+    <string name="no_record_audio">You have not recorded a recording file yet</string>
+    <string name="send_audio_fail">Application recording failed, please try again</string>
+    <string name="send_audio_success">Storage success</string>
+
+    <string name="play_aduio">audition</string>
+    <string name="record_aduio">recording</string>
+    <string name="stop_play_record">stop</string>
+
+    <string name="first_tips_frame_rate_range">The maximum frame rate range of the first stream is 1–%d</string>
+    <string name="second_tips_frame_rate_range">The maximum frame rate range of the second stream is 1–%d</string>
+    <string name="first_tips_code_rate_range">The maximum rate range for the first stream is  32–6144</string>
+    <string name="second_tips_code_rate_range">The maximum rate range for the second stream is  32–2048</string>
+    <string name="first_tips_video_level_range">The first stream video encoding level range is 1–6</string>
+    <string name="second_tips_video_level_range">The second stream video encoding level range is 1–6</string>
+
+    <!--20180615  5.1.32 -->
+    <string name="sd_card_formating">The SD card is in formatting</string>
+    <string name="sd_card_format_success">Success of SD card formatting</string>
+    <string name="sd_card_format_fail">Failure of SD card formatting</string>
+
+    <!--20180509 警号联动 5.1.22-->
+    <string name="tips_md_area">Drag to draw a picture area that responds to motion detection:</string>
+    <string name="alarm_setting">Set alarm ringing linkage</string>
+    <string name="alarm_action">Alarm ringing linkage:</string>
+    <string name="alarm_voice">Sound type:</string>
+    <string name="alarm_time">Length of time:</string>
+    <string name="alarm_alarm_sound">Alarm</string>
+    <string name="alarm_barking">Canine bark</string>
+    <string name="alarm_sound_type_">Sound type</string>
+    <string name="alarm_select_voice">Select the type of sound associated with the alarm:</string>
+    <string name="alarm_time_">Length of time:</string>
+    <string name="alarm_select_time">Choose the alarm linkage duration</string>
+
+    <!--20180410 增加提示  5.1.17-->
+    <string name="search_six_hours">Within six hours of searching, no relevant record was found. Please click on the upper right corner to select another time zone.</string>
+    <string name="search_one_hours">Within one hour of searching, no relevant record was found. Please click on the upper right corner to select another time zone.</string>
+    <string name="search_half_day">Within half a day of searching, no relevant record was found. Please click on the upper right corner to select another time zone.</string>
+    <string name="search_one_day">During the search, no relevant record was found. Please click on the upper right corner to select another time zone.</string>
+    <string name="search_one_week">Within a week of searching, no relevant record was found. Please click on the upper right corner to select another time zone.</string>
+    <string name="search_custom">Custom search, no relevant record found, please click the upper right corner to select other time interval to try it</string>
+
+    <!--20180403 增加提示  5.1.16-->
+    <string name="area_left">Left area</string>
+    <string name="area_all">All areas</string>
+    <string name="area_right">Right area</string>
+    <string name="application_success">Successful application!</string>
+    <string name="application_fail">Application failed!</string>
+
+    <!--20180228 增加提示 5.1.11 -->
+    <string name="toast_user_pass_tolong">The username or password you entered is too long</string>
+    <string name="toast_adress_toolong">The address you entered is too long</string>
+    <string name="toast_theme_tolong">The subject you typed is too long</string>
+    <string name="toast_ssid_tolong">You configure the SSID length is too long!</string>
+    <string name="toast_no_space">The SSID and password can not contain spaces</string>
+    <string name="psw_no_empty">password should not empty</string>
+    <string name="tips_wifi_setting_fail">WIFI settings failed</string>
+    <string name="tips_wifi_check_fail">WIFI password error!</string>
+    <string name="pup_auto">automatic switch</string>
+    <string name="pup_open">Forced to open</string>
+    <string name="pup_close">Forced to close</string>
+
+    <!--20180127 增加提示  5.1.5- -->
+    <string name="xml_switch_view">Switch the view</string>
+    <string name="xml_fish_video">Fisheye video</string>
+    <string name="xml_pinch_together">1. Available two fingers zoom view video yo!</string>
+    <string name="xml_double_enlager">Double-click to enlarge view the area you want to see!</string>
+    <string name="xml_select_view_model">Please select the view model you want to watch:</string>
+    <string name="xml_current_install_mode">Current installation mode:</string>
+
+    <!-- 20171221 加密并分享 5.0.32-->
+    <string name="dimension_content">Auto-scan the QR code / barcode inside the box</string>
+    <string name="scanning_begin">Start scanning</string>
+    <string name="light_button">flash</string>
+    <string name="photograph_album">Album selection</string>
+    <string name="check_empty">the content can not be blank</string>
+    <string name="tips_goto_add_camera">Go add our camera first</string>
+    <string name="tips_sele_share_camera">Select shared camera</string>
+    <string name="toast_sele_device">Please select the equipment you want to share!</string>
+    <string name="totast_more_ten">You can only share up to 10 devices at a time</string>
+    <string name="tips_share_qrcode">Share QR code</string>
+    <string name="tips_device_num">Number of devices</string>
+    <string name="tips_share_to">share to</string>
+    <string name="tips_share">share it</string>
+    <string name="toast_scan_fail">Scan failed!</string>
+    <string name="toast_device_added">The camera you have added before!</string>
+    <string name="toast_confirm_add">Confirm add</string>
+    <string name="toast_scanning">Scanning...</string>
+    <string name="scann_qrcode_add_camera">Scan two-dimensional code to add sharing camera</string>
+
+    <!-- 20171102 新增语言包 RF 5.0.16-->
+    <string name="rf_alarm">RF alarm</string>
+    <string name="tips_no_data">no data</string>
+    <string name="tips_emptied">Emptied</string>
+    <string name="today">Nowadays</string>
+    <string name="door">Menci</string>
+    <string name="infra">Infrared</string>
+    <string name="doorbell">doorbell</string>
+    <string name="smoke">smoke</string>
+    <string name="gas">Gas</string>
+    <string name="all_types">All types</string>
+    <string name="before_day">The day before</string>
+    <string name="after_day">After the day</string>
+    <string name="clear_all_log">Are you sure to clear all locally stored alarm logs?</string>
+    <string name="rf_sensor">RF sensor</string>
+    <string name="tip_reminder">Tips</string>
+    <string name="fish_divide_nine">As shown above, the top panorama mode screen is divided into nine areas</string>
+    <string name="fish_dou_elg">Double-click any area above, you can view</string>
+    <string name="fish_know">Know it</string>
+    <string name="fish_view_model">Select the model of the view:</string>
+    <string name="fish_listen">Listen</string>
+    <string name="fish_talk">Intercom</string>
+    <string name="fish_snap">Screenshot</string>
+    <string name="fish_cruise">Cruise</string>
+    <string name="fish_top">Top install</string>
+    <string name="fish_wall">Wall install</string>
+    <string name="no_wifi">No wifi!</string>
+    <string name="to_album">Save to album</string>
+    <string name="tint_to_album">Confirm to save this video in phone album?</string>
+    <string name="success_to_album">Successfully saved to album!</string>
+    <string name="tip_no">no</string>
+    <string name="alarm_sos">SOS alarm</string>
+    <string name="alarm_ring">Ring alarm</string>
+    <string name="alarm_door">Magnetic alarm</string>
+    <string name="alarm_infra">Infrared alarm</string>
+    <string name="alarm_doorbell">Doorbell alarm</string>
+    <string name="alarm_smoke">Smoke alarm</string>
+    <string name="alarm_gas">Gas alarm</string>
+    <string name="alarm_socket">Socket alarm</string>
+    <string name="alarm_temp">Temperature alarm</string>
+    <string name="alarm_humi">Humidity alarm</string>
+
+    <!-- 20170816 新增语言包  5.0.9-->
+    <string name="tips_email_tolong">E-mail content is long</string>
+    <string name="tip_de_zone">Set successfully</string>
+    <string name="tip_not_empty">The new password can not be empty</string>
+    <string name="tip_open_faild">Open failed</string>
+    <string name="tip_close_failed">Close failed</string>
+    <string name="tips_open_video_fail">Failed to open video</string>
+    <string name="data_parsing_error">Data parsing error</string>
+    <string name="file_alearly_convert">The file has been converted, please in the album or file management under the Convert folder to view!</string>
+    <string name="video_conversion">Video conversion</string>
+    <string name="video_convert">Video conversion</string>
+    <string name="tips_about_video_vonert">Make sure the video is converted to an MP4 file and can be viewed in the album or file manager under the Convert folder</string>
+    <string name="port_limit">The port number ranges from (1-65535)</string>
+
+    <!--——————————以前添加——————————-——-->
+
+    <string name="title_camera_fragment">Camera</string>
+    <string name="action_settings">Settings</string>
+    <string name="return_btn">Back</string>
+    <string name="click_to_add_camera">Add Camera</string>
+    <!-- General -->
+    <string name="sure">Sure</string>
+    <string name="cancel">Cancel</string>
+    <string name="tips_loading">Loading</string>
+    <string name="application">Apply</string>
+    <!-- Add camera page -->
+    <string name="device_setting">Device Setting</string>
+    <string name="name">Name:</string>
+    <string name="user_name">UserName:</string>
+    <string name="camera">Camera</string>
+    <string name="admin">admin</string>
+    <string name="uid">UID:</string>
+    <string name="psw">Password</string>
+    <string name="scan">Scan QR code, add UID</string>
+    <string name="search_in_lan">Search Camera from LAN</string>
+    <string name="one_key_setting">Wireless Installation</string>
+    <string name="add_camera">Add Camera</string>
+    <string name="finish">Done</string>
+    <string name="text_scan">put the QR Code into the frame</string>
+    <string name="search_camera_result">Search results</string>
+    <string name="refresh">Refresh</string>
+
+    <string name="list_txt_uid">UID: </string>
+    <string name="tips_null_nike">Camera name cannot be empty.</string>
+    <string name="tips_null_uid">UID cannot be empty.</string>
+    <string name="tips_null_username">User Name cannot be empty.</string>
+    <string name="tips_add_camera_exists">This camera already exists, please enter another one.</string>
+    <string name="btn_ok">OK</string>
+    <string name="setting">Setting</string>
+    <string name="ssid">SSID</string>
+    <string name="one_key_setting_wifi">Wireless Installation</string>
+    <string name="connect_to_WIFI_first">please connect to WIFI first</string>
+    <!-- live view setting -->
+    <string name="txt_recording">REC</string>
+    <string name="tips_snapshot_success">Snapshot Saved</string>
+    <string name="tips_snapshot_failed">Snapshot was failed.</string>
+    <string name="tips_no_sdcard">No SDCard found in your device.</string>
+    <string name="resolution_ratio">resolution ratio</string>
+    <string name="high_definition">HD</string>
+    <string name="fluent">SD</string>
+    <string name="btn_ptz_zoomin">Zoom in</string>
+    <string name="btn_ptz_zoomout">Zoom out</string>
+    <string name="btn_ptz_focusout">Focus out</string>
+    <string name="btn_ptz_focusin">Focus in</string>
+    <string name="btn_preset_call">Call</string>
+    <string name="btn_preset_set">Set</string>
+    <string name="tips_preset_set_btn">Default setting success</string>
+    <string name="btn_preset_1">1</string>
+    <string name="btn_preset_2">2</string>
+    <string name="btn_preset_3">3</string>
+    <string name="btn_preset_4">4</string>
+    <string name="btn_preset_5">5</string>
+    <string name="btn_preset_6">6</string>
+    <string name="btn_preset_7">7</string>
+    <string name="btn_preset_8">8</string>
+    <string name="txt_live_flip">Flip</string>
+    <string name="txt_live_mirror">Mirror</string>
+    <string name="item_modify_password">Change Password</string>
+    <string name="item_alarm_motion_detection">Alarm Setting</string>
+    <string name="item_action_with_alarm">Action with Alarm</string>
+    <string name="item_timing_video">Recording Schedule</string>
+    <string name="item_audio_setup">Audio Setting</string>
+    <string name="item_video_settings">Video Setting</string>
+    <string name="item_wifi_settings">Wi-Fi Setting</string>
+    <string name="item_sd_card_set">SD Card Setting</string>
+    <string name="item_equipment_time_setting">Time Setting</string>
+    <string name="item_mailbox_settings">Email Setting</string>
+    <string name="item_ftp_settings">FTP Setting</string>
+    <string name="item_system_settings">System Setting</string>
+    <string name="item_equipment_information">Device Information</string>
+    <string name="camera_setup">Camera Setting</string>
+    <string name="title_modify_password">Change Password</string>
+    <string name="old_psw">Old Password</string>
+    <string name="new_psw">New Password</string>
+    <string name="sure_new_psw">Confirm Password</string>
+    <string name="tips_password_wrong_contains">password can not contains ~ $ \ \\ = + or space</string>
+    <string name="tips_old_password_is_wrong">The old password is wrong.</string>
+    <string name="tips_new_passwords_do_not_match">New passwords do not match.</string>
+    <string name="use_setting_show_psw">Show password</string>
+    <string name="tips_modify_security_code_ok">Successfully modify the password, the camera will be re connected later</string>
+    <string name="title_alarm_motion_detection">Alarm Setting</string>
+    <string name="open_motion_detection">Motion Detection</string>
+    <string name="sensitivity">Level</string>
+
+    <string name="title_action_with_alarm">Action with Alarm</string>
+    <string name="alarm_push">Alarm Notifications</string>
+    <string name="alarm_sd_card_video">Alarm SD REC</string>
+    <string name="email_alarm_and_send_pictures">E-mail Alarm with Pictures</string>
+    <string name="save_pictures_to_ftp_server">Save pictures to FTP server</string>
+    <string name="save_videos_to_ftp_server">Save videos to FTP server</string>
+    <string name="take_picture_counts">Picture num</string>
+    <string name="title_timing_video">Recording Schedule</string>
+    <string name="video_file_times">Record files duration</string>
+    <string name="tips_recording_time_range">The time range of 15–%d seconds</string>
+    <string name="turn_on_video">Enable Record</string>
+    <string name="video_time">Record Timer</string>
+    <string name="sends">seconds</string>
+    <string name="title_audio_setup">Audio Setting</string>
+    <string name="input_style">Input Type</string>
+    <string name="input_volume">Input Volume</string>
+    <string name="output_volume">Output Volume</string>
+    <string name="title_video_settings">Video Setting</string>
+    <string name="video_setting_first_stream">First stream</string>
+    <string name="video_setting_second_stream">Second stream</string>
+    <string name="video_setting_code_rate">Bit rate</string>
+    <string name="video_setting_frame_rate">Frame rate</string>
+    <string name="video_setting_video_level">Image quality</string>
+    <string name="video_setting_btm_tips">The smaller value, the better image quality, larger flow control</string>
+    <string name="video_setting_video_format">Video format</string>
+    <string name="wifi_setting_loading">Loading</string>
+    <string name="wifi_setting_safety">Enctype:</string>
+    <string name="wifi_setting_manager_btn">Wi-Fi manager</string>
+    <string name="title_sdcard_setting">SD card settings</string>
+    <string name="sd_card_setting_storage_size">Total size</string>
+    <string name="sd_card_setting_available_size">Free size</string>
+    <string name="sd_card_setting_format_sd_card">Format SD card</string>
+    <string name="sd_card_setting_btm_tips">Format command will ERASE all data of SDCard</string>
+    <string name="title_equipment_setting">Time Setting</string>
+    <string name="equipment_setting_setting_time">Device Time</string>
+    <string name="equipment_setting_synchronization_time">Sync with Phone time</string>
+    <string name="equipment_setting_equipment_setting_timezone">Time Zone Settings</string>
+    <string name="equipment_setting_equipment_timezone">Device Time Zone</string>
+    <string name="equipment_setting_phone_timezone">Phone Time Zone</string>
+    <string name="equipment_setting_setting_timezone">Setting TimeZone</string>
+    <string name="title_mailbox_settings">Email Setting</string>
+    <string name="mailbox_setting_smtp_server">SMTP Server</string>
+    <string name="mailbox_setting_port">Server Port</string>
+    <string name="mailbox_setting_safety_connection">Encrypt Type</string>
+    <string name="mailbox_setting_verification">Authentication</string>
+    <string name="mailbox_setting_username">Username</string>
+    <string name="mailbox_setting_password">Password</string>
+    <string name="mailbox_setting_receive_address">Send To</string>
+    <string name="mailbox_setting_sending_address">Sender</string>
+    <string name="mailbox_setting_theme">Subject</string>
+    <string name="mailbox_setting_message">Message</string>
+    <string name="mailbox_setting_test_email">Test Email Setting</string>
+    <string name="mailbox_setting_test">Test</string>
+    <string name="title_ftp_settings">FTP Setting</string>
+    <string name="ftp_setting_server">Server Address</string>
+    <string name="ftp_setting_port">Server Port</string>
+    <string name="ftp_setting_username">User Name</string>
+    <string name="ftp_setting_password">Password</string>
+    <string name="ftp_setting_passive_mode">Passive mode</string>
+    <string name="ftp_setting_path">Path</string>
+    <string name="ftp_setting_test_ftp">Test FTP settings</string>
+    <string name="title_system_settings">System Setting</string>
+    <string name="system_setting_restart_camera">Reboot camera</string>
+    <string name="system_setting_restore_factory_settings">Reset Camera</string>
+    <string name="system_setting_upgrade_online_settings">Check for updates</string>
+    <string name="title_equipment_information">Device Information</string>
+    <string name="device_info_device_name">Device ID:</string>
+    <string name="device_info_network_state">Network:</string>
+    <string name="device_info_user_connections">Current Users:</string>
+    <string name="device_info_software_version">Software Version:</string>
+    <string name="device_info_ip_address">IP Address:</string>
+    <string name="device_info_subnet_mask">Subnet Mask:</string>
+    <string name="device_info_gateway">Gateway:</string>
+    <string name="device_info_dns">DNS:</string>
+    <string name="tips_format_sd_card">Format command will ERASE all data of SDCard,Continue?</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="tips_reboot_camera">Are you sure to reboot camera?</string>
+    <string name="tips_restore_factory_settings">Setup data will be initialized.Are you sure to reset?</string>
+    <string name="title_wifi_setting">WIFI Setting</string>
+    <string name="wifi_setting_signal_intensity">Signal:</string>
+    <string name="wifi_setting_connect">Connect</string>
+    <string name="wifi_setting_not_connect">Unconnected</string>
+    <string name="wifi_setting_connected">Connected</string>
+    <string name="mailbox_setting_save_success">Mailbox settings saved successfully</string>
+    <string name="mailbox_setting_save_failed">Mailbox settings saved failed</string>
+    <string name="ftp_setting_save_success">FTP settings saved successfully</string>
+    <string name="ftp_setting_save_failed">FTP settings saved failed</string>
+    <string name="alarm_action_save_failed">Alarm settings saved failed</string>
+    <string name="alarm_action_save_success">Alarm settings saved successfully</string>
+    <string name="mailbox_setting_check_success">Test Success</string>
+    <string name="mailbox_setting_check_failed">Test Failed</string>
+    <string name="title_scan_qr_code">Scanning QR Code</string>
+    <string name="about_fragment_SDK_version">SDK_version:</string>
+    <string name="about_fragment_copyright">CopyRight</string>
+    <string name="title_about_fragment">About</string>
+    <string name="title_picture_fragment">Picture</string>
+    <string name="title_local_picture">Local Picture</string>
+    <string name="tips_msg_delete_snapshot">Sure to delete this snapshot?</string>
+    <string name="delete">Delete</string>
+    <string name="btn_play_video_local">Play</string>
+    <string name="btn_delete_video_local">Delete</string>
+    <string name="btn_play_video_online">Play</string>
+    <string name="btn_downlinad_video_online">Download</string>
+    <string name="tips_delete_video_local">Sure to remove videos?</string>
+    <string name="video_fragment_online_btn">Online</string>
+    <string name="video_fragment_local_btn">Local</string>
+    <string name="title_local_video">Local Video</string>
+    <string name="title_online_video">Video viewing</string>
+    <string name="btn_search">Search</string>
+    <string name="search_video_hour">Within an hour</string>
+    <string name="search_video_half_day">Within half day</string>
+    <string name="search_video_a_day">Within a day</string>
+    <string name="search_video_week">Within a week</string>
+    <string name="search_video_self">Custom</string>
+    <string name="title_search_video">SD Card Video</string>
+    <string name="title_search_dialog">Search Event</string>
+    <string name="search_dialog_from">From</string>
+    <string name="search_dialog_to">To</string>
+    <string name="tips_wifi_one_key_set">Do you hear the sound</string>
+    <string name="sure_to_exit">Are you sure you want to exit ?</string>
+    <string name="tips_warning">Warning</string>
+    <string name="tip_system_update_new">You have the latest version already.</string>
+    <string name="tip_system_update_old">A new firmware is available,do you want to update?</string>
+    <string name="tip_system_update">The camera is upgrading,please do not power off and keep the network available.</string>
+    <string name="btn_alarm_neglect">Neglect</string>
+    <string name="btn_alarm_check">Check</string>
+    <string name="title_alarm_list">Alarm List</string>
+    <string name="tips_no_picture">Unsaved picture</string>
+    <string name="hint_nike">IP Camera</string>
+    <string name="hint_uid">Enter or Scan Camera UID</string>
+    <string name="hint_user">Enter the User Name</string>
+    <string name="hint_key">Enter the Password</string>
+    <string name="tips_msg_delete_camera">Are you sure you want to delete the camera?</string>
+    <string name="title_user_settting">User Setting</string>
+    <string name="tips_one_key_set_wifi">Setting Wifi,wait a moment</string>
+    <string name="tips_summer_time">clock for daylight saving time</string>
+    <string name="tips_alarm_setting_success">Alarm Setting Saving Successfully</string>
+    <string name="tips_alarm_setting_failed">Alarm Setting Saving Failed</string>
+    <string name="tips_time_video">Setting Successfully</string>
+    <string name="tips_audio_setting">Audio Setting Successfully</string>
+    <string name="tips_video_setting">Video Setting Successfully</string>
+    <string name="tips_wifi_setting">Wifi Setting Successfully</string>
+    <string name="tips_format_sd_card_success">Format SD Card Successfully</string>
+    <string name="tips_device_time_setting_synchroned_time">Synchronization Time Successfully </string>
+    <string name="tips_device_time_setting_timezone">Setting Time Successfully,Camera Reboot Later</string>
+    <string name="tips_device_time_setting_timezone_new">Setting Time Successfully</string>
+    <string name="range_video_setting_frame_rate">fps(1-%d)</string>
+    <string name="tips_device_time_setting_reboot_camera">Snyc device time will reboot device, Continue？</string>
+    <string name="click_offline_setting">Cannot setup offline camera</string>
+    <string name="tips_downlaoding_video">Downloading video remotely.</string>
+    <string name="cancel_download">Cancel</string>
+    <string name="tips_cancel_download_file">The file is being downloading, is it going to be cancelled?</string>
+    <string name="tips_no_permission">Please check the settings to open the relevant application permissions</string>
+    <string name="btn_edit">Edit</string>
+    <string name="tips_remove_success">Remove camera successfully</string>
+    <string name="tips_long_press_preset_btn">Please press the reset key for 10 seconds</string>
+    <string name="tips_internet_no_cameras">Devices not found on the internet</string>
+    <string name="live_view_light_normal">Normal</string>
+    <string name="live_view_light_color">Color</string>
+    <string name="live_view_light_auto">Auto</string>
+    <string name="live_view_light_open">Open</string>
+    <string name="live_view_light_close">Close</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="txtSearchEventDuration">Search event from:</string>
+    <string name="txtNoResultFound">No relevant record found, please click the upper right corner to select another time interval to try it</string>
+    <string name="tips_msg_wifi_set_restart_app">Setup Wifi must restart App.Please restart Exit APP</string>
+    <string name="uid_limit_input">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-—</string>
+    <string name="tips_stop_video">Playing Finished</string>
+    <string name="tips_limit_add_camera">Limits 64 cameras</string>
+    <string name="tips_one_key_setting">Before click the apply button, please turn the phone volume up to the maximum, and put the phone close to the camera.</string>
+    <string name="btn_download_local_video">Download</string>
+    <string name="tips_network_disconnect">The network has been disconnected, please re Download</string>
+    <string name="tips_wifi_connect_success">Connection success! </string>
+    <string name="tips_update_system_failed">Connection server failed</string>
+    <string name="tips_wifi_connect_failed">Connection failed! </string>
+    <!-- lt -->
+    <string name="tip_password_limit">Password length must not exceed Thirty-one!</string>
+    <string name="tip_perset_hint_input">Please input preset number (1-255)</string>
+    <string name="tip_perset_toast">Preset bits must not be greater than 255 or 0!</string>
+    <string name="tip_preset_fail">Preset bit setting failed</string>
+    <string name="camera_list">Camera list</string>
+    <string name="current_wifi">Current WiFi</string>
+    <string name="failed_recording">devices memory less than 100MB</string>
+    <string name="tip_modify_password">Please change the password </string>
+    <string name="tip_modify_content">The device is using the default password:admin,please change the password first</string>
+    <string name="alert_modify_now">Change it right now</string>
+    <string name="tip_not_spcialchar">Special characters are not supported</string>
+    <string name="tip_alear_dowm">The video has been downloaded</string>
+    <string name="tip_device_add">Device added</string>
+    <string name="aleary_add_device">added</string>
+    <string name="tip_not_switch_quality">You can\'t switch clarity when talking</string>
+    <string name="tip_recording_list">Recordings</string>
+    <string name="tip_not_empty_admin">The new password cannot be empty and admin</string>
+    <string name="search_video">Search video</string>
+    <string name="tip_from">from</string>
+    <string name="tip_to">to</string>
+    <string name="tip_ftp_setting">Test FTP settings</string>
+    <string name="tip_year">Y</string>
+    <string name="tip_mouth">M</string>
+    <string name="tip_day">D</string>
+    <string name="tip_hour">H</string>
+    <string name="tip_miute">M</string>
+    <string name="tip_hint">Prompt</string>
+    <string name="tip_file_alear_down">The file has been downloaded</string>
+    <string name="tip_knows">I know</string>
+    <string name="tip_seting_devi_time">Saving Time Zone To Device</string>
+    <string name="tip_get_devi_tizone_fail">Failed to get device time zone</string>
+    <string name="time_zone">Time zone</string>
+    <string name="tip_dst">DST</string>
+    <string name="tip_delete_snap">Select the snapshot you want to delete!</string>
+    <string name="tips_down_file_route">You can view downloaded videos under this path: Video - Local - Download</string>
+    <string name="tips_no_file">Unsaved video</string>
+    <string name="tip_not_settimezone">You cannot set the time zone for the current device</string>
+    <string name="tips_input_tolong">The length you entered is too long</string>
+    <string name="continue_down">Continue downloading</string>
+    <string name="pup_goto">Go to see</string>
+    <string name="disconnect">connection dropped</string>
+    <string name="tip_count">In calculation</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="device_type">Device type</string>
+    <string name="tips_restart">Restart...</string>
+    <string name="tips_recovery">In recovery...</string>
+    <string name="tips_update">In update...</string>
+    <string name="tips_stanotend">The start time must not be greater than or equal to the end time</string>
+    <string name="tips_username_tolong">The username is too long</string>
+    <string name="tips_password_tolong">The password is too long</string>
+    <string name="hint_chart">Chinese characters are not supported</string>
+    <string name="tips_invalid_uid">UID is invalid</string>
+    <string name="tit_video">Record</string>
+    <string name="tips_play_progress">Play progress: </string>
+    <string name="tips_setzonefail">Set time zone failed</string>
+    <string name="tips_port_notnull">The port can not be empty or 0</string>
+</resources>

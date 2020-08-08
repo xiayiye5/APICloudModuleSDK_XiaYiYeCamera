@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical">
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/nor_background_ll"
+                android:padding="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/open_motion_detection" />
+
+                <com.hichip.hichip.widget.SwitchButton
+                    android:id="@+id/togbtn_motion_detection"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_motion_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/nor_background_ll"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                android:padding="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/tips_md_area" />
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="#ff00ff">
+
+                    <com.hichip.customview.CropImageView
+                        android:id="@+id/cropimageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="#aaaaaa" />
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:padding="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/shape_rect_blue"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtn_left_area"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/area_left"
+                        android:background="@drawable/selector_blue_white_left"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#5CACEE" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_all_area"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:button="@null"
+                        android:background="@drawable/selector_blue_white_all"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/area_all"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#5CACEE" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_right_area"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/selector_blue_white_right"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/area_right"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_move_detaction_sensitivity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="7dp"
+                android:visibility="invisible"
+                android:background="@drawable/nor_background_ll"
+                android:padding="7dp">
+
+                <TextView
+                    android:id="@+id/tv_sensitivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/sensitivity" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_sensitivity"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <SeekBar
+                        android:id="@+id/sb_sensitivity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_sensitivity"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:maxHeight="2dp"
+                        android:minHeight="2dp"
+                        android:progressDrawable="@drawable/po_seekbar"
+                        android:thumb="@drawable/shape_seekbar_thumb_blue" />
+
+                    <TextView
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/tv_sensitivity_rate"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="100"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/but_application"
+                android:visibility="invisible"
+                android:layout_width="280dp"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_button_complete"
+                android:text="@string/application"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

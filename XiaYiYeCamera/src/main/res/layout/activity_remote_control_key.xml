@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/key_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.hichip.thecamhi.base.TitleView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="传感器按键启用状态:"
+        android:textColor="#666666" />
+
+    <RelativeLayout
+        android:id="@+id/rl_open_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_key_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="报警按键"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <com.hichip.hichip.widget.SwitchButton
+            android:id="@+id/btn_swi_open_close"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="1dp"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/rl_key_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_key_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报警: 开"
+            android:textColor="@color/color_666666"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_key_1_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/color_666666" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_key_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_key_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报警: 关"
+            android:textColor="@color/color_666666"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_key_0_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/color_666666" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_key_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="SOS"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_sos_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_key_name1"
+            android:textColor="#888888" />
+
+        <com.hichip.hichip.widget.SwitchButton
+            android:id="@+id/btn_swi_sos"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_key_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="报警响铃"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_ring_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_key_name2"
+            android:textColor="#888888" />
+
+        <com.hichip.hichip.widget.SwitchButton
+            android:id="@+id/btn_swi_ring"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="对于已添加的传感器按键,需先通过APP中按键控制打开其启用状态之后,才可以使用按键功能!" />
+
+</LinearLayout>

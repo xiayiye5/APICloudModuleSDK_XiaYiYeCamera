@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical">
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/nor_background_ll"
+                android:orientation="vertical"
+                android:padding="5dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="@string/video_setting_first_stream"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dip" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:background="#eee" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_resolution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/video_resolution" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="-5dp"
+                        android:layout_weight="2">
+
+                        <Spinner
+                            android:id="@+id/sp_resolution"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/video_setting_code_rate" />
+
+                    <EditText
+                        android:id="@+id/first_code_rate_et"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:maxLength="4" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="kbps(32-6144)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/video_setting_frame_rate" />
+
+                    <EditText
+                        android:id="@+id/first_frame_rate_et"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:maxLength="2" />
+
+                    <TextView
+                        android:id="@+id/first_frame_rate_range"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/video_setting_video_level" />
+
+                    <EditText
+                        android:id="@+id/first_video_level_et"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:maxLength="1" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="(1-6)" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="@string/video_setting_btm_tips" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/nor_background_ll"
+                android:orientation="vertical"
+                android:padding="5dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="@string/video_setting_second_stream"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dip" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:background="#eee" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/video_setting_code_rate" />
+
+                    <EditText
+                        android:id="@+id/second_code_rate_et"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:maxLength="4" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="kbps(32-2048)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/video_setting_frame_rate" />
+
+                    <EditText
+                        android:id="@+id/second_frame_rate_et"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:maxLength="2" />
+
+                    <TextView
+                        android:id="@+id/second_frame_rate_range"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/video_setting_video_level" />
+
+                    <EditText
+                        android:id="@+id/second_video_level_et"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:maxLength="1" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="(1-6)" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="@string/video_setting_btm_tips" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/nor_background_ll"
+                android:orientation="vertical"
+                android:padding="5dip">
+
+                <LinearLayout
+                    android:id="@+id/ll_frequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/video_setting_video_format" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup_video_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_fifty_hz"
+                            android:layout_width="80dp"
+                            android:layout_height="34dp"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/radio_btn_picture_fragment_left_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:textColor="@drawable/radio_button_font_style"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_sixty_hz"
+                            android:layout_width="80dp"
+                            android:layout_height="34dp"
+                            android:background="@drawable/radio_btn_picture_fragment_right_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:textColor="@drawable/radio_button_font_style"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/video_setting_application_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="@string/application" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

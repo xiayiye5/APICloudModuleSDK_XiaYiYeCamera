@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:background="#dddddd"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/popu_tips_down"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#222222"
+        android:layout_marginLeft="10dp"
+        android:text="@string/tips_downlaoding_video"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/rate_loading_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/round_loading_rate_bg"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="18sp" />
+
+    <com.hichip.customview.CannotDragSeekBar
+        android:id="@+id/sb_downloading_video"
+        android:layout_width="match_parent"
+        
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_gravity="center_vertical"
+            android:id="@+id/cancel_btn_downloading_video"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:background="@drawable/click_btn_bg"
+            android:text="@string/cancel" />
+        <Button
+            android:layout_gravity="center_vertical"
+            android:id="@+id/goto_btn_downloading_video"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:visibility="gone"
+             android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginTop="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/click_btn_bg"
+            android:text="@string/pup_goto" />
+
+  
+    </LinearLayout>
+
+</LinearLayout>

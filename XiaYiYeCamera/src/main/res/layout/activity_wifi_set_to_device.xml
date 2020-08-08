@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/wifitode_title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/nor_background_ll"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/wifi_to_device_tvSsid"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="10dip"
+            android:background="#eee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/psw"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/wifi_to_device_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/psw"
+                android:maxLength="63"
+                android:singleLine="true"
+                android:gravity="bottom"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/wifi_to_devide_application"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="@string/application" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

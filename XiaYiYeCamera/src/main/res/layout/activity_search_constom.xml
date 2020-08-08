@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.hichip.thecamhi.base.TitleView>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="@string/tip_from"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/edit_box_bg"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp" >
+
+            <com.hichip.hichip.widget.DatePickerView
+                android:id="@+id/year_pv"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tip_year"
+                android:textColor="@color/text2"
+                android:textSize="18sp" />
+
+            <com.hichip.hichip.widget.DatePickerView
+                android:id="@+id/month_pv"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tip_mouth"
+                android:textColor="@color/text2"
+                android:textSize="18sp" />
+
+            <com.hichip.hichip.widget.DatePickerView
+                android:id="@+id/day_pv"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tip_day"
+                android:textColor="@color/text2"
+                android:textSize="18sp" />
+
+            <com.hichip.hichip.widget.DatePickerView
+                android:id="@+id/hour_pv"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/hour_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tip_hour"
+                android:textColor="@color/text2"
+                android:textSize="18sp" />
+
+            <com.hichip.hichip.widget.DatePickerView
+                android:id="@+id/minute_pv"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/minute_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tip_miute"
+                android:textColor="@color/text2"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/tip_to"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/edit_box_bg"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp" >
+
+            <com.hichip.hichip.widget.DatePickerView
+                android:id="@+id/year_pv_to"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tip_year"
+                android:textColor="@color/text2"
+                android:textSize="18sp" />
+
+            <com.hichip.hichip.widget.DatePickerView
+                android:id="@+id/month_pv_to"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tip_mouth"
+                android:textColor="@color/text2"
+                android:textSize="18sp" />
+
+            <com.hichip.hichip.widget.DatePickerView
+                android:id="@+id/day_pv_to"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tip_day"
+                android:textColor="@color/text2"
+                android:textSize="18sp" />
+
+            <com.hichip.hichip.widget.DatePickerView
+                android:id="@+id/hour_pv_to"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/hour_text_to"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tip_hour"
+                android:textColor="@color/text2"
+                android:textSize="18sp" />
+
+            <com.hichip.hichip.widget.DatePickerView
+                android:id="@+id/minute_pv_to"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/minute_text_to"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tip_miute"
+                android:textColor="@color/text2"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

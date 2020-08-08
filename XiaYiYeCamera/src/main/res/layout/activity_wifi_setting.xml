@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/nor_background_ll"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        <TextView 
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            android:text="@string/current_wifi"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="5dip"
+            android:background="#eee" />
+
+        <RelativeLayout
+            android:id="@+id/rl_current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/wifi_setting_wifi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/wifi_setting_safety"
+                android:layout_below="@+id/wifi_setting_wifi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444" />
+            <ImageView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arrow"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/manager_wifi_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="@string/wifi_setting_manager_btn" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/wifi_setting_wifi_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/nor_background_ll"
+        android:padding="10dip"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout>

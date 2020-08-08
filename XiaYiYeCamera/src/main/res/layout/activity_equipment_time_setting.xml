@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/nor_background_ll"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/equipment_setting_setting_time"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_device_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#666666"
+                android:text="2018-04-16 18:47:21"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="5dip"
+            android:background="#eee" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/synchronization_time_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:text="@string/equipment_setting_synchronization_time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/nor_background_ll"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equipment_setting_equipment_timezone"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_time_zone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_time_zone"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_arrow"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_xls"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/tip_dst"
+                android:textSize="18sp" />
+
+            <com.hichip.hichip.widget.SwitchButton
+                android:id="@+id/time_zone_xls"
+                style="@style/SwitchButtonStyle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                 />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equipment_setting_phone_timezone"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/phone_time_zone_et"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_arrow1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow1"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_margin="5dip"
+            android:background="#eee" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/setting_time_zone_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:text="@string/tip_seting_devi_time" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="20dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ftp_setting_server" />
+
+                <EditText
+                    android:id="@+id/ftp_setting_server_edt"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:maxLength="63"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ftp_setting_port" />
+
+                <EditText
+                    android:id="@+id/ftp_setting_port_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(1-65535)"
+                    android:inputType="number"
+                    android:maxLength="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ftp_setting_username" />
+
+                <EditText
+                    android:id="@+id/ftp_setting_username_edt"
+                    android:layout_width="match_parent"
+                    android:maxLength="63"
+                    android:singleLine="true"
+                    android:inputType="text|textVisiblePassword"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ftp_setting_password" />
+
+                <EditText
+                    android:id="@+id/ftp_setting_psw_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="63"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ftp_setting_passive_mode" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.hichip.hichip.widget.SwitchButton
+                        android:id="@+id/ftp_setting_mode_tgbtn"
+                        style="@style/SwitchButtonStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ftp_setting_path" />
+
+                <EditText
+                    android:id="@+id/ftp_setting_path_edt"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ftp_setting_test_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:text="@string/tip_ftp_setting" />
+
+            <Button
+                android:id="@+id/ftp_setting_application_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:text="@string/application" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

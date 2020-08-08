@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical"
+    tools:context=".thecamhi.activity.setting.AlarmHumanActivity">
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/edit_box_bg"
+        android:padding="5dp"
+        android:text="@string/human_mode_content" />
+
+    <RelativeLayout
+
+        android:id="@+id/rl_alone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/alone_trigger" />
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/iv_alone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/checkbox_select" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/rl_joint"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/linkage_trigger" />
+
+        <ImageView
+          android:layout_marginRight="10dp"
+            android:id="@+id/iv_joint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/checkbox_select" />
+    </RelativeLayout>
+</LinearLayout>

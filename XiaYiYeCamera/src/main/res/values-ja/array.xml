@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="tab_name">
+		<item>カメラ</item>
+		<item>写真</item>
+		<item>ビデオ</item>
+		<item>情報</item>
+	</string-array>
+	<string-array name="connect_state">
+		<item>未接続</item>
+		<item>接続中</item>
+		<item>接続中</item>
+		<item>パスワードが間違っています</item>
+		<item>接続済</item>
+	</string-array>
+	<string-array name="motion_detection_sensitivity">
+		<item>高</item>
+		<item>普通</item>
+		<item>低</item>
+	</string-array>
+	<string-array name="audio_input_style">
+		<item>ライン</item>
+		<item>マイク</item>
+	</string-array>
+	
+	<string-array name="device_timezone_old">
+
+        <item>GMT-11 ;</item>
+        <item>GMT-10 ハワイ;</item>
+        <item>GMT-9 アラスカ;</item>
+        <item>GMT-8 太平洋時間;</item>
+        <item>GMT-7 西部時間;</item>
+        <item>GMT-6 中部時間;</item>
+        <item>GMT-5 東部時間;</item>
+        <item>GMT-4 大西洋時間;</item>
+        <item>GMT-3 グリーンランド;</item>
+        <item>GMT-2 中大西洋;</item>
+        <item>GMT-1 ;</item>
+        <item>GMT 0 ロンドン;</item>
+        <item>GMT+1 パリ;ローマ;</item>
+        <item>GMT+2 カイロ;</item>
+        <item>GMT+3 モスクワ;</item>
+        <item>GMT+4 アブダビ;</item>
+        <item>GMT+5 イスラマバード;</item>
+        <item>GMT+6 ダッカ;</item>
+        <item>GMT+7 バンコク;</item>
+        <item>GMT+8 北京;香港;台北;</item>
+        <item>GMT+9 東京;</item>
+        <item>GMT+10 グァム岛;</item>
+        <item>GMT+11 ソロモン島;</item>
+        <item>GMT+12 フィジー;</item>
+    </string-array>
+	
+	<string-array name="device_timezone_new">
+		<item>Etc/GMT-12</item>
+		<item>Pacific/Apia</item>
+		<item>Pacific/Honolulu</item>
+		<item>America/Anchorage</item>
+		<item>America/Los_Angeles</item>
+		<item>America/Denver</item>
+		<item>America/Tegucigalpa</item>
+		<item>America/Phoenix</item>
+		<item>America/Saskatchewan</item>
+		<item>America/Mexico_City</item>
+		<item>America/Chicago</item>
+		<item>America/Costa_Rica</item>
+		<item>America/Indianapolis</item>
+		<item>America/New_York</item>
+		<item>America/Bogota</item>
+		<item>America/Caracas</item>
+		<item>America/Santiago</item>
+		<item>America/Montreal</item>
+		<item>America/St_Johns</item>
+		<item>America/Thule</item>
+		<item>America/Buenos_Aires</item>
+		<item>America/Sao_Paulo</item>
+		<item>Atlantic/South_Georgia</item>
+		<item>Atlantic/Cape_Verde</item>
+		<item>Atlantic/Azores</item>
+		<item>Europe/Dublin</item>
+		<item>Africa/Casablanca</item>
+		<item>Europe/Amsterdam</item>
+		<item>Europe/Belgrade</item>
+		<item>Europe/Brussels</item>
+		<item>Europe/Warsaw</item>
+		<item>Africa/Lagos</item>
+		<item>Europe/Athens</item>
+		<item>Europe/Bucharest</item>
+		<item>Africa/Cairo</item>
+		<item>Africa/Harare</item>
+		<item>Europe/Helsinki</item>
+		<item>Asia/Jerusalem</item>
+		<item>Asia/Baghdad</item>
+		<item>Asia/Kuwait</item>
+		<item>Europe/Moscow</item>
+		<item>Africa/Nairobi</item>
+		<item>Asia/Tehran</item>
+		<item>Asia/Dubai</item>
+		<item>Asia/Baku</item>
+		<item>Asia/Kabul</item>
+		<item>Asia/Yekaterinburg</item>
+		<item>Asia/Karachi</item>
+		<item>Asia/Calcutta</item>
+		<item>Asia/Katmandu</item>
+		<item>Asia/Novosibirsk</item>
+		<item>Asia/Dhaka</item>
+		<item>Asia/Astana</item>
+		<item>Asia/Rangoon</item>
+		<item>Asia/Bangkok</item>
+		<item>Asia/Krasnoyarsk</item>
+		<item>Asia/Hong_Kong</item>
+		<item>Asia/Irkutsk</item>
+		<item>Asia/Kuala_Lumpur</item>
+		<item>Australia/Perth</item>
+		<item>Asia/Taipei</item>
+		<item>Asia/Tokyo</item>
+		<item>Asia/Seoul</item>
+		<item>Asia/Yakutsk</item>
+		<item>Australia/Adelaide</item>
+		<item>Australia/Brisbane</item>
+		<item>Australia/Sydney</item>
+		<item>Pacific/Guam</item>
+		<item>Australia/Hobart</item>
+		<item>Asia/Vladivostok</item>
+		<item>Asia/Magadan</item>
+		<item>Pacific/Auckland</item>
+		<item>Pacific/Fiji</item>
+		<item>Pacific/Tongatapu</item>
+	</string-array>
+	<string-array name="net_work_style">
+		<item>有線</item>
+		<item>WIFI</item>
+	</string-array>
+	<string-array name="video_frequency">
+		<item>50HZ</item>
+		<item>60HZ</item>
+	</string-array>
+	<string-array name="video_apenc">
+		<item>INVALID</item>
+		<item>NONE</item>
+		<item>WEP</item>
+		<item>WPA_TKIP</item>
+		<item>WPA_AES</item>
+		<item>WPA2_TKIP</item>
+		<item>WPA2_AES</item>
+	</string-array>
+	<string-array name="recording_time">
+		<item>録画しない</item>
+		<item>常に録画する</item>
+	</string-array>
+	<string-array name="safety_connection">
+		<item>None</item>
+		<item>SSL</item>
+		<item>TLS</item>
+		<item>STARTTLS</item>
+	</string-array>
+	<string-array name="online_recording_type">
+		<item>全ビデオファイル</item>
+		<item>手動録画</item>
+		<item>動体検知による録画</item>
+		<item>スケジュール録画</item>
+	</string-array>
+	<string-array name="event_type">
+		<item>全ビデオファイル</item>
+		<item>手動録画</item>
+		<item>警報録画</item>
+		<item>スケジュール録画</item>
+	</string-array>
+	<string-array name="alarm_action_picture_num">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+
+	<string-array name="tips_alarm_list_array">
+		<item>動きアラーム</item>
+		<item>IOアラーム</item>
+		<item>オーディオアラーム</item>
+		<item>UARTアラーム</item>
+		<item>ヒューマノイド認識警告</item>
+	</string-array>
+
+</resources>

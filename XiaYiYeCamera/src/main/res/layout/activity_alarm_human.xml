@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical"
+    tools:context=".thecamhi.activity.setting.AlarmHumanActivity">
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/smart_umanoid_ecognition" />
+
+        <com.hichip.hichip.widget.SwitchButton
+            android:id="@+id/switch_alarm_human"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_human_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/edit_box_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frame_human_form" />
+
+            <com.hichip.hichip.widget.SwitchButton
+                android:id="@+id/switch_alarm_rect"
+                style="@style/SwitchButtonStyle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_link_way"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:text="@string/alarm_trigger" />
+
+            <TextView
+                android:id="@+id/tv_link_way"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#FFFFFF"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="center"
+              />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

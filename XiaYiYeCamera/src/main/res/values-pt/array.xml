@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="tab_name">
+		<item>Camera</item>
+		<item>Imagem</item>
+		<item>Vídeo</item>
+		<item>Sobre</item>
+	</string-array>
+	<string-array name="connect_state">
+		<item>Desconectado</item>
+		<item>Conectando</item>
+		<item>Conectando</item>
+		<item>Senha incorreta</item>
+		<item>Conectados</item>
+	</string-array>
+	<string-array name="motion_detection_sensitivity">
+		<item>Alto </item>
+		<item>Médio</item>
+		<item>Baixo</item>
+	</string-array>
+	<string-array name="audio_input_style">
+		<item>Entrada de linha </item>
+		<item>Microfone</item>
+	</string-array>
+	
+	<string-array name="device_timezone_old">
+        <item>GMT-11 Ilhas Menores; Samoa</item>
+        <item>GMT-10 Hawaii;</item>
+        <item>GMT-9 Alaska;</item>
+        <item>GMT-8 Zona do Pacífico (EUA ou Canadá);</item>
+        <item>GMT-7 Zona das Montanhas (EUA ou Canadá);</item>
+        <item>GMT-6 Zona Central (EUA ou Canadá);</item>
+        <item>GMT-5 Zona horária do Leste (EUA ou Canadá);</item>
+        <item>GMT-4 Zona horária do Atlantico (Canadá);</item>
+        <item>GMT-3 Brasília; Buenos Aires;</item>
+        <item>GMT-2 Meio-Atlantico;</item>
+        <item>GMT-1 A?ores; Cabo Verde;</item>
+        <item>GMT 0 Londres; Irlanda; Lisboa;</item>
+        <item>GMT+1 Paris; Roma; Berlin; Madrid;</item>
+        <item>GMT+2 Israel; Atenas; Cairo; Jerusalém;</item>
+        <item>GMT+3 Moscou; Nairóbi; Riyadh;</item>
+        <item>GMT+4 Baku; Tbilisi; Abu Dhabi; Mascot;</item>
+        <item>GMT+5 Nova Delhi; Islamabad; Karachi;</item>
+        <item>GMT+6 Dakar; Alma Ata; Novosibirsk; Astana;</item>
+        <item>GMT+7 Bangkok; Hanoi; Jakarta;</item>
+        <item>GMT+8 Beijing; Singapore; Hongkong; Taipei;</item>
+        <item>GMT+9 Tóquio; Seul; Yakutsk;</item>
+        <item>GMT+10 Guam; Melbourne; Sydney;</item>
+        <item>GMT+11 Magadan; Nova Caled?nia; Ilhas Salom?o;</item>
+        <item>GMT+12 Wellington; Auckland; fiji</item>
+    </string-array>
+	
+	<string-array name="device_timezone_new">
+		<item>Etc/GMT-12</item>
+		<item>Pacific/Apia</item>
+		<item>Pacific/Honolulu</item>
+		<item>America/Anchorage</item>
+		<item>America/Los_Angeles</item>
+		<item>America/Denver</item>
+		<item>America/Tegucigalpa</item>
+		<item>America/Phoenix</item>
+		<item>America/Saskatchewan</item>
+		<item>America/Mexico_City</item>
+		<item>America/Chicago</item>
+		<item>America/Costa_Rica</item>
+		<item>America/Indianapolis</item>
+		<item>America/New_York</item>
+		<item>America/Bogota</item>
+		<item>America/Caracas</item>
+		<item>America/Santiago</item>
+		<item>America/Montreal</item>
+		<item>America/St_Johns</item>
+		<item>America/Thule</item>
+		<item>America/Buenos_Aires</item>
+		<item>America/Sao_Paulo</item>
+		<item>Atlantic/South_Georgia</item>
+		<item>Atlantic/Cape_Verde</item>
+		<item>Atlantic/Azores</item>
+		<item>Europe/Dublin</item>
+		<item>Africa/Casablanca</item>
+		<item>Europe/Amsterdam</item>
+		<item>Europe/Belgrade</item>
+		<item>Europe/Brussels</item>
+		<item>Europe/Warsaw</item>
+		<item>Africa/Lagos</item>
+		<item>Europe/Athens</item>
+		<item>Europe/Bucharest</item>
+		<item>Africa/Cairo</item>
+		<item>Africa/Harare</item>
+		<item>Europe/Helsinki</item>
+		<item>Asia/Jerusalem</item>
+		<item>Asia/Baghdad</item>
+		<item>Asia/Kuwait</item>
+		<item>Europe/Moscow</item>
+		<item>Africa/Nairobi</item>
+		<item>Asia/Tehran</item>
+		<item>Asia/Dubai</item>
+		<item>Asia/Baku</item>
+		<item>Asia/Kabul</item>
+		<item>Asia/Yekaterinburg</item>
+		<item>Asia/Karachi</item>
+		<item>Asia/Calcutta</item>
+		<item>Asia/Katmandu</item>
+		<item>Asia/Novosibirsk</item>
+		<item>Asia/Dhaka</item>
+		<item>Asia/Astana</item>
+		<item>Asia/Rangoon</item>
+		<item>Asia/Bangkok</item>
+		<item>Asia/Krasnoyarsk</item>
+		<item>Asia/Hong_Kong</item>
+		<item>Asia/Irkutsk</item>
+		<item>Asia/Kuala_Lumpur</item>
+		<item>Australia/Perth</item>
+		<item>Asia/Taipei</item>
+		<item>Asia/Tokyo</item>
+		<item>Asia/Seoul</item>
+		<item>Asia/Yakutsk</item>
+		<item>Australia/Adelaide</item>
+		<item>Australia/Brisbane</item>
+		<item>Australia/Sydney</item>
+		<item>Pacific/Guam</item>
+		<item>Australia/Hobart</item>
+		<item>Asia/Vladivostok</item>
+		<item>Asia/Magadan</item>
+		<item>Pacific/Auckland</item>
+		<item>Pacific/Fiji</item>
+		<item>Pacific/Tongatapu</item>
+	</string-array>
+	<string-array name="net_work_style">
+		<item>CABLE</item>
+		<item>WIFI</item>
+	</string-array>
+	<string-array name="video_frequency">
+		<item>50HZ</item>
+		<item>60HZ</item>
+	</string-array>
+	<string-array name="video_apenc">
+		<item>INVALID</item>
+		<item>NONE</item>
+		<item>WEP</item>
+		<item>WPA_TKIP</item>
+		<item>WPA_AES</item>
+		<item>WPA2_TKIP</item>
+		<item>WPA2_AES</item>
+	</string-array>
+	<string-array name="recording_time">
+		<item>Vazio</item>
+		<item>O dia todo </item>
+	</string-array>
+	<string-array name="safety_connection">
+		<item>None</item>
+		<item>SSL</item>
+		<item>TLS</item>
+		<item>STARTTLS</item>
+	</string-array>
+	<string-array name="online_recording_type">
+		<item>Todas as grava??es </item>
+		<item>Grava??o manual </item>
+		<item>Grava??o de alarme </item>
+		<item>Grava??o de plano </item>
+	</string-array>
+	<string-array name="event_type">
+		<item>Todas as grava??es </item>
+		<item>Grava??o manual </item>
+		<item>Grava??o de alarme </item>
+		<item>Grava??o de plano </item>
+	</string-array>
+	<string-array name="alarm_action_picture_num">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="tips_alarm_list_array">
+		<item>Alarme de Movimento</item>
+		<item>Alarme de IO</item>
+		<item>Alarme de Áudio</item>
+		<item>Alarme de UART</item>
+		<item>Aviso de Reconhecimento Humanóide </item>
+	</string-array>
+
+</resources>

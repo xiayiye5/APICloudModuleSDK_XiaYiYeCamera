@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/add_rf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.hichip.thecamhi.base.TitleView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="请选择您要为摄像机添加的传感器类型："
+        android:textColor="#eeeeee" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_remote_control"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:background="#eeeeee"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="7dp" >
+
+            <ImageView
+                android:id="@+id/iv_remote_control"
+                android:layout_width="@dimen/add_rf_grid_size"
+                android:layout_height="@dimen/add_rf_grid_size"
+                android:padding="2dp"
+                android:tint="#46A8E8"
+                android:background="@drawable/shape_rf_circular"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/remote_control" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_remote_control"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="遥控器" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_door"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#eeeeee"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_door"
+                android:layout_width="@dimen/add_rf_grid_size"
+                android:layout_height="@dimen/add_rf_grid_size"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"
+                android:tint="#46A8E8"
+                 android:background="@drawable/shape_rf_circular"
+                android:src="@drawable/door" />
+
+            <TextView
+                android:id="@+id/tv_door"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_door"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="门磁" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_infrared"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:background="#eeeeee"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_infrared"
+                android:layout_width="@dimen/add_rf_grid_size"
+                android:layout_height="@dimen/add_rf_grid_size"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"
+                android:tint="#46A8E8"
+                 android:background="@drawable/shape_rf_circular"
+                android:src="@drawable/infrared" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_infrared"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="红外" />
+        </RelativeLayout>
+
+        
+        <RelativeLayout
+            android:id="@+id/rl_smoke"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#eeeeee"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_fire"
+                android:layout_width="@dimen/add_rf_grid_size"
+                android:layout_height="@dimen/add_rf_grid_size"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"
+                android:tint="#46A8E8"
+                 android:background="@drawable/shape_rf_circular"
+                android:src="@drawable/fire" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_fire"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="烟雾" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+        <RelativeLayout
+            android:id="@+id/rl_gas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#eeeeee"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_gas"
+                android:layout_width="@dimen/add_rf_grid_size"
+                android:layout_height="@dimen/add_rf_grid_size"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"
+                android:tint="#46A8E8"
+                 android:background="@drawable/shape_rf_circular"
+                android:src="@drawable/gas" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_gas"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="燃气" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_other"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#eeeeee"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_re_other"
+                android:layout_width="@dimen/add_rf_grid_size"
+                android:layout_height="@dimen/add_rf_grid_size"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"
+                android:tint="#46A8E8"
+                 android:background="@drawable/shape_rf_circular"
+                android:src="@drawable/rf_other" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_re_other"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="其他类型" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

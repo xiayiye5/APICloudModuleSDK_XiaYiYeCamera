@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog_bg"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="添加传感器"
+            android:textColor="#777777"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+             android:padding="10dp"
+             android:layout_marginBottom="5dp"
+            android:text="选择添加方式"
+            android:textColor="#777777"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+
+        <TextView
+            android:id="@+id/tv_scan_code_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="扫码添加"
+            android:textColor="@color/color_rf_blue"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+
+        <TextView
+            android:id="@+id/check_code_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+             android:textColor="@color/color_rf_blue"
+             android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:gravity="center"
+            android:text="对码添加"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.hichip.thecamhi.base.TitleView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/alarm_select_time" />
+
+    <RelativeLayout
+        android:id="@+id/rl_five"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="5 "
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_five"
+            android:text="@string/sends"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_five"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/finish"
+            android:tint="#5CACEE"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ten"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="10"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_ten"
+            android:text="@string/sends"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_ten"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/finish"
+            android:tint="#5CACEE"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_twenty"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_twenty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="20"
+            android:textSize="16sp" />
+        
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_twenty"
+            android:text="@string/sends"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_twenty"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/finish"
+            android:tint="#5CACEE"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_thirty"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_thirty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="30"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_thirty"
+            android:text="@string/sends"
+            android:textSize="16sp" />
+        
+
+        <ImageView
+            android:id="@+id/iv_thirty"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/finish"
+            android:tint="#5CACEE"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

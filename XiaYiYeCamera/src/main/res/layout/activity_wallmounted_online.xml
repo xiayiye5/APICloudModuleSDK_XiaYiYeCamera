@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playback_view_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <com.hichip.thecamhi.base.MyLiveViewGLMonitor
+        android:id="@+id/monitor_playback_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true" />
+
+    <TextView
+        android:id="@+id/tv_timezone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#44444444"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="2018-03-07 08:45"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gradient_live"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_return"
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:padding="4dp"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_shade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/edit_box_bg"
+        android:contentDescription="@null" />
+
+    <ProgressBar
+        android:id="@+id/prs_loading"
+        style="@style/hi_rogress_horizontal"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/rl_play"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_gradient_live_buttom"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingRight="5dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/play_btn_playback_online"
+            android:layout_width="38dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/playback_play_btn_bg"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/play_btn_playback_online"
+            android:text="00:00"
+            android:textColor="#eeeeee" />
+
+        <SeekBar
+            android:id="@+id/prs_playing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_start_time"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@drawable/shape_seekbar_thumb" />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/prs_playing"
+            android:text="00:00"
+            android:textColor="#eeeeee" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cureent_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/click_btn_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_current_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/tips_play_progress"
+            android:textColor="#666666"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_precent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <!-- <LinearLayout
+        android:id="@+id/rl_wall_mounted_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa666666"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_fish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xml_fish_video"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fish_one"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/xml_pinch_together"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fish_one"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/xml_double_enlager"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_guide"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_know_bg"
+            android:paddingBottom="8dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="8dp"
+            android:text="@string/fish_know"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout> -->
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.xiayiye.xiayiyelibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name="com.j990117178.jfw.secret.SecretEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.j990117178.jfw.secret.SecretLoginActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+    </application>
+
+</manifest>

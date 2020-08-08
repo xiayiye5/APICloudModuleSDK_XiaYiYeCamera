@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dip"
+    android:padding="5dip" >
+
+
+        <TextView
+            android:id="@+id/wifi_setting_item_ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_below="@+id/wifi_setting_item_ssid"
+        android:layout_marginTop="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_setting_signal_intensity" />
+
+        <TextView
+            android:id="@+id/wifi_setting_item_signal_intensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/wifi_setting_item_safety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>

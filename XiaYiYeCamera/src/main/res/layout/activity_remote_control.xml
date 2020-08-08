@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_box_bg"
+    android:orientation="vertical" >
+
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/remote_control_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.hichip.thecamhi.base.TitleView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="请选择你要添加遥控器按键的功能 :"
+        android:textColor="#666666" />
+
+    <Button
+        android:id="@+id/but_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/selector_control_btn_bg"
+        android:gravity="center"
+        android:text="RF报警: 开"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/but_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/selector_control_btn_bg"
+        android:gravity="center"
+        android:text="RF报警: 关"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/but_sos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/selector_control_btn_bg"
+        android:gravity="center"
+        android:text="SOS"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/but_ring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/selector_control_btn_bg"
+        android:gravity="center"
+        android:text="报警响铃"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

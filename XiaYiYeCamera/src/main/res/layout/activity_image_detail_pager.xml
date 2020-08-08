@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/edit_box_bg"
+    android:layout_height="match_parent">
+    <com.hichip.thecamhi.base.TitleView
+        android:id="@+id/image_preview_title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" /> 
+
+    <com.hichip.hichip.pictureviewer.HackyViewPager
+        android:layout_below="@+id/image_preview_title_top"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/edit_box_bg" />
+
+    <TextView
+        android:id="@+id/indicator"
+        android:text="%1$d/%2$d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="#068d1f"
+        android:textSize="18sp" />
+
+</RelativeLayout>

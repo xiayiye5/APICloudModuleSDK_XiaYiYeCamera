@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+<!--         android:startColor="#19B4ED" -->
+    <gradient
+        android:angle="270"
+        android:startColor="#19B4ED"
+        android:endColor="@color/edit_box_bg"
+        android:type="linear"
+        />
+
+</shape>

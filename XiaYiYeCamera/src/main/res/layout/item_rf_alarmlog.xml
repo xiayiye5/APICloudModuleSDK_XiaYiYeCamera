@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="7dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="7dp" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/move"
+        android:padding="5dp"
+        android:background="@drawable/shape_circular_black" />
+
+    <TextView
+        android:id="@+id/tv_alarm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_alarm_time"
+        android:layout_below="@+id/tv_alarm_time"
+        android:layout_marginTop="3dp"
+        android:text="fnaskdfj"
+        android:textColor="#666666" />
+
+    <ImageView
+        android:id="@+id/iv_hava_video"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/hava_video"
+        android:visibility="visible" />
+
+</RelativeLayout>
